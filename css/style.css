@@ -1,0 +1,91 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #F5F5DC;
+
+
+}
+
+/* Full-width navigation container */
+#nav-bar {
+    width: 100%;
+    background-color: black; /* Background color for entire navbar */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Navbar list styling */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-around; /* Spaces items evenly */
+}
+
+/* Navbar items */
+.nav-list li {
+    flex: 1;
+    text-align: center;
+    /* background-color: black;*/ /*Background color for individual items */
+    padding: 15px 0; /* Increase padding for better spacing */
+    /* border-bottom-left-radius: 25px; */
+    /* border-bottom-right-radius: 25px; */
+}
+
+/* Links styling */
+.nav-list li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+/* STYLING BOX1 */
+#box1 {
+    text-align: center;
+    margin: 1vw;
+}
+
+details {
+    text-align: center;
+}
+
+table{
+    text-align: center;
+    margin:auto;
+}
+
+/* FOOTER */
+
+#footer nav .nav-list li a{
+    color:purple;
+}
+
+
+/* Styling for key access */
+:focus {
+    outline: none; /* Removes default outline (optional) */
+    border: 3px solid red;
+}
+
+
+body {
+    font-size: 20px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
+h2{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 1vw;
+}

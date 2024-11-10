@@ -1,0 +1,433 @@
+
+/* Reset default padding and margin */
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #F5F5DC;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hide hamburger for mobile (default) view */
+.hamburger {
+    visibility: hidden;
+    /* font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 1rem; */
+}  
+
+
+
+/* Full-width navigation container */
+#nav-bar {
+    width: 100%;
+    background-color: black; /* Background color for entire navbar */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Navbar list styling */
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-around; /* Spaces items evenly */
+}
+
+/* Navbar items */
+.nav-list li {
+    flex: 1;
+    text-align: center;
+    /* background-color: black;*/ /*Background color for individual items */
+    padding: 15px 0; /* Increase padding for better spacing */
+    /* border-bottom-left-radius: 25px; */
+    /* border-bottom-right-radius: 25px; */
+}
+
+/* Links styling */
+.nav-list li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-list li label{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* block for team info */
+.team-info {
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50vw;
+    background-color: darkgray;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+
+/* Athlete Info Styling */
+.athlete-info {
+    border-bottom: solid 1px black;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50vw;
+    text-align: center; /* Center stuff in middle of screen */
+}
+
+.athlete-photo {
+    border-radius: 50%;
+    object-fit: cover; 
+    box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Header Row Styles */
+thead tr {
+    background-color: gray;
+    color: black;
+}
+
+
+
+/* Cell Padding and Border */
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+
+}
+
+/* Row styling */
+tr, td {
+    border: 1px solid #333;
+    text-align: center;
+}
+
+tr th {
+    text-align: center;
+}
+
+tbody tr {
+    background-color: white;
+}
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: #F5F5DC;
+}
+
+/* Hover Effect on Rows */
+tbody tr:hover {
+    background-color: red;
+}
+
+/* Round top corners of header */
+thead th:first-child {
+    border-top-left-radius: 25px; /* Round top-left corner */
+}
+
+thead th:last-child {
+    border-top-right-radius: 25px; /* Round top-right corner */
+}
+
+
+
+/* Career Record */
+.cr-container {
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    width: 90vw;
+    text-align: center;
+    max-height: 300px; /* need for scrollable */
+    overflow-y: scroll;
+    border-radius: 25px; /* Rounding for the container */
+    height: 400px; /* Set a fixed height for scrolling */
+}
+
+#fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: #3498db; /* Button color */
+    color: white;            /* Text color */
+    border: none;
+    border-radius: 50%;      /* Circular shape */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for elevation */
+    font-size: 24px;         /* Icon size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;    /* Remove underline from link */
+}
+
+#home-button {
+    display: inline-block;           /* Makes the link behave like a button */
+    padding: 10px 20px;
+    background-color: #1B587E;       /* Button color */
+    color: white;                    /* Text color */
+    text-align: center;              /* Center text inside the button */
+    text-decoration: none;           /* Remove underline */
+    border-radius: 8px;              /* Rounded corners */
+    font-weight: bold;               /* Bold text */
+    font-size: 16px;                 /* Font size */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: background-color 0.3s;
+}
+
+#home-button:hover {
+    background-color: red;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* Make comments scrollable since large */
+.comment-segment {
+
+    overflow-y: scroll;  /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    white-space: nowrap; 
+    text-align: center; /* Center align text if needed */
+}
+
+th {
+    background: gray;
+    position: sticky;
+    top: 0;
+
+  }
+
+/* Hide date and comments if screen small */
+
+    .date, .table-header-date {
+        display: none;
+    }
+
+
+    .comments, .table-header-comment {
+        display: none;
+    }
+    
+
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none;
+        animation: none;
+    }
+}
+
+/* DARK MODE PROFILE */
+
+body.dark-mode{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+
+body.dark-mode thead th{
+    padding: 10px; /* Internal padding (actually keeps it in theader)*/
+    margin: 0;
+    background-color: green;
+    color: white;
+}
+
+body.dark-mode .nav-list {
+    width: 100%;
+    background-color: black; /* Background color for entire navbar */
+    border: 1px solid orangered;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* block for team info */
+body.dark-mode .team-info {
+    border: 1px solid orangered;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50vw;
+    background-color: rgb(60, 60, 60);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+}
+
+/* Athlete */
+body.dark-mode .athlete-info {
+    border-bottom: solid 1px orangered;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    width: 50vw;
+    text-align: center; /* Center stuff in middle of screen */
+    color: white;
+}
+
+body.dark-mode .athlete-photo {
+    border-radius: 50%;
+    object-fit: cover; 
+    border: solid 2px orangered;
+}
+
+
+body.dark-mode h3{
+    color: white;
+}
+
+
+
+
+/* HIGH CONTRAST MODE PROFILE */
+
+body.high-contrast{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+
+body.high-contrast thead th{
+    padding: 10px; /* Internal padding (actually keeps it in theader)*/
+    margin: 0;
+    background-color: green;
+    color: white;
+}
+
+body.high-contrast .nav-list {
+    width: 100%;
+    background-color: black; /* Background color for entire navbar */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* block for team info */
+body.high-contrast .team-info {
+    border: 1px solid orangered;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50vw;
+    background-color: rgb(60, 60, 60);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+}
+
+/* Athlete */
+body.high-contrast .athlete-info {
+    border-bottom: solid 1px orangered;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    width: 50vw;
+    text-align: center; /* Center stuff in middle of screen */
+    color: black;
+}
+
+body.high-contrast .athlete-photo {
+    border-radius: 50%;
+    object-fit: cover; 
+    border: solid 2px orangered;
+}
+
+
+body.high-contrast h3{
+    color: black;
+}
+
+
+/* Animation */
+/* Progress bar container */
+.progress-container {
+    width: 100%;                /* Full width */
+    background-color: #e0e0e0;   /* Light grey background */
+    border-radius: 10px;         /* Rounded corners */
+    overflow: hidden;            
+    height: 20px;                /* Height of the progress bar */
+    margin: 20px 0; 
+}
+
+/* Progress bar itself */
+.progress-bar {
+    width: 0%;
+    height: 100%;                /* Full height */
+    background-color: #3498db;   /* Bar color */
+    border-radius: 10px;         /* Rounded corners */
+    animation: progressAnimation 3s ease-in-out forwards infinite; /* Animation */
+}
+
+/* Keyframes for animation */
+@keyframes progressAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;              /* Target width (80% in this example) */
+    }
+}
+
+#goal {
+    padding-bottom: 1vw;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for tabindex */
+:focus {
+    outline: none; /* Removes default outline (optional) */
+    border: 3px solid red;
+}
+
+#fab:focus {
+    border: 5px solid red;
+}
+
+/* System Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body.system-dark {
+        background-color: #121212;
+        color: #ffffff;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body.system-dark {
+        background-color: #121212;
+        color: #ffffff;
+    }
+}

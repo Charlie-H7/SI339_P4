@@ -1,0 +1,44 @@
+/* Hide date and comments if screen small */
+@media (min-width: 1000px) {
+    .date {
+        display: visible;
+    }
+
+    .comment-segment {
+        visibility: visible;
+    }
+
+    .comments {
+        visibility: visible;
+    }
+
+    
+    .nav-list li a{
+        flex-direction: row;
+        font-size: 20px;
+    }
+
+    body {
+        font-size:20px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+    
+
+    /* Row styling */
+    tr, td {
+        font-size: 20px;
+    }
+
+    tr th {
+        font-size: 20px;
+    }
+
+
+}
+

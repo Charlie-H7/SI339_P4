@@ -1,0 +1,111 @@
+/* Hide date and comments if screen small */
+@media (min-width: 600px) {
+ 
+    
+    .nav-list {
+        flex-direction: row;
+
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+ 
+    
+    /* Table Styles */
+
+ 
+
+    /* UNDO col deletion */
+    .date{
+        /* display: none; */
+        display: table-cell;
+        border: none;
+        /* border: 1px solid #dddddd; */
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+
+    }
+    
+    .comments {
+        /* display: none; */
+        display: table-cell;
+        border: none;
+        /* border: 1px solid #dddddd; */
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+
+    }
+
+    /* Not sure why this one's thing changed, property of display none?? */
+    tr th.table-header.date{
+        border: none;
+        border: 1px solid #dddddd;;
+    }
+    th.table-header.comments{
+        /* display: none; */
+
+        /* border: 1px solid #dddddd; */
+        border: none;
+        border: 1px solid #dddddd;;
+    }
+/* 
+    .table-header-comments {
+        border: 1px solid #ddddd;
+    } */
+
+    table {
+        /* width: 100%; */
+        border-collapse: collapse;
+        font-size: 18px;
+        width: auto;
+        margin: auto;
+    }
+
+    /* Header Row Styles */
+    thead tr {
+        background-color: gray;
+        color: black;
+    }
+
+
+
+    /* Cell Padding and Border */
+    th, td{
+        padding: 12px 15px;
+        border: 1px solid #dddddd;
+
+    }
+
+    /* Row styling */
+    tr, td {
+        border: 1px solid #333;
+        text-align: center;
+    }
+
+    tr th {
+        text-align: center;
+    }
+    /* Alternating Row Colors */
+    tbody tr:nth-child(even) {
+        background-color: #F5F5DC;
+    }
+    
+    tbody tr:nth-child(odd) {
+        background-color: white;
+    }
+
+
+    /* Hover Effect on Rows */
+    tbody tr:hover {
+        background-color: red;
+    }
+
+    thead th:last-child {
+        border-top-right-radius: 25px; /* Round top-right corner */
+    }
+
+
+
+
+}

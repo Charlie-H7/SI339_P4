@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" href="../dist/css/lightbox.css">
+        <link rel="stylesheet" type="text/css" href="../css/student_style.css">
+        <link rel="stylesheet" type="text/css" href="../css/tablet_view.css">
+        <link rel="stylesheet" type="text/css" href="../css/desktop_view.css">
+        <title>Deliverable 3</title> <!--Title TK-->
+
+        <link rel="icon" type="/images/icon.png" href="/images/icon.png">
+    </head>
+    <body>
+        
+    
+        <!--nav bar-->
+        <div id="nav-bar">
+            <nav>
+                <ul class="nav-list">
+                    <li>            
+                        <a href="https://www.athletic.net/" tabindex="0"><img id="site-logo" src="../images/site_logo.svg" alt="site logo" width="175" height="26"></a>
+                    </li>
+                    <li><a href="https://www.google.com/" tabindex="0">login</a></li>
+                    <li>
+                        <label for="theme-switch">Choose a theme:</label>
+                            <select id="theme-switch" class="theme">
+                                    <option value="" selected disabled>Select Theme</option>
+                                    <option value="dark-mode">Dark Mode</option>
+                                    <option value="light-mode">Light Mode</option>
+                                    <option value="high-contrast">High Contrast</option>
+                                </select>
+                            </select>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        
+        <!--Main box-->
+            <!--Main box 1-->
+        <div class="team-info">
+            <a href="../images/aa_skyline.jpg" data-lightbox="team-logo" data-title="Team Logo">
+                <img src="../images/aa_skyline.jpg" class="team-logo" alt="team insert name logo" width="175" height="175" tabindex="0">
+            </a>
+            <h1>Ann Arbor Skyline</h1>
+            <div> 48104, MI </div>
+        </div>
+
+
+
+    <div class="athlete-info">
+        <a href="../images/AthleteImages/18820273.jpg" data-lightbox="athlete" data-title="Athlete: Leland Weiser">
+            <img 
+                src="../images/AthleteImages/18820273.jpg" 
+                alt="img of Leland Weiser, id: ['18820273']" 
+                width="150" height="150" 
+                class="athlete-photo"
+                tabindex="0"
+            >
+        </a>
+        <h2>Leland Weiser</h2>
+        18820273
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div id="goal">Personal mile goal met</div>
+    </div>
+
+    
+    <h3>Season Record</h3>
+    <div class="sr-container">
+        <table class="sr-table" tabindex="0">
+            <thead>
+                <tr>
+                    <th class="table-header">Overall Place 🥇</th>
+                    <th class="table-header">Grade 🎓</th>
+                    <th class="table-header">Time 🕕</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td>2021</td>
+                <td>9</td>
+                <td>18:51.1PR</td>
+            </tr>
+        
+            <tr>
+                <td>2022</td>
+                <td>10</td>
+                <td>18:58.6</td>
+            </tr>
+        
+            <tr>
+                <td>2023</td>
+                <td>11</td>
+                <td>21:08.7</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </div>
+
+    
+    <h3>Career Record</h3>
+    <div class=cr-container>
+        <table class="cr-table" tabindex="0">
+            <thead>
+                <tr>
+                    <th class="table-header">Overall Place 🥇</th>
+                    <th class="table-header">Time 🕕</th>
+                    <th class="table-header date">Date 📅</th>
+                    <th class="table-header">Meet 🏃‍♀️</th>
+                    <th class="table-header comments">Comments 💬</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td class="place">87 </td>
+                <td class="time">21:08.7 SR</td>
+                <td class="date">Oct 28</td>
+                <td class="meet">Post Regional Open Meet (PROM) - Springfiled Oaks</td>
+                <td class="comments" class="comment-segment"></td>
+            </tr>
+        
+            <tr>
+                <td class="place">97 </td>
+                <td class="time">19:39.8</td>
+                <td class="date">Sep 1</td>
+                <td class="meet">22 Saline Early Bird</td>
+                <td class="comments" class="comment-segment">Awesome race! Let's look at where we can shave off a few more seconds.</td>
+            </tr>
+        
+            <tr>
+                <td class="place">97 </td>
+                <td class="time">20:02.3</td>
+                <td class="date">Sep 14</td>
+                <td class="meet">SEC-HS Jamboree 1 (Red/White Varsity Boys)</td>
+                <td class="comments" class="comment-segment">You fought hard all the way through, great resilience!</td>
+            </tr>
+        
+            <tr>
+                <td class="place">147 </td>
+                <td class="time">18:58.6 SR</td>
+                <td class="date">Sep 24</td>
+                <td class="meet">Jackson Invitational - Varsity (Orange Division)</td>
+                <td class="comments" class="comment-segment">I blinked and missed the first half of your race! That was quick!</td>
+            </tr>
+        
+            <tr>
+                <td class="place">110 </td>
+                <td class="time">21:01.6</td>
+                <td class="date">Oct 27</td>
+                <td class="meet">Brighton PROM</td>
+                <td class="comments" class="comment-segment"></td>
+            </tr>
+        
+            <tr>
+                <td class="place">84 </td>
+                <td class="time">21:30.3</td>
+                <td class="date">Aug 31</td>
+                <td class="meet">Mustang Invite (9/10 Boys)</td>
+                <td class="comments" class="comment-segment">Are you sure you're not part cheetah? That was fast!</td>
+            </tr>
+        
+            <tr>
+                <td class="place">170 </td>
+                <td class="time">19:25.6</td>
+                <td class="date">Sep 25</td>
+                <td class="meet">Jackson Invitational - Varsity (Division 1 Varsity)</td>
+                <td class="comments" class="comment-segment">Fantastic run! Let's keep building on this for the next race.</td>
+            </tr>
+        
+            <tr>
+                <td class="place">36 </td>
+                <td class="time">19:49.6</td>
+                <td class="date">Sep 28</td>
+                <td class="meet">SEC-HS Jamboree 2 (Red) (Reserve Boys)</td>
+                <td class="comments" class="comment-segment">You were flying today! Keep up that momentum!</td>
+            </tr>
+        
+            <tr>
+                <td class="place">132 </td>
+                <td class="time">19:18.5</td>
+                <td class="date">Oct 9</td>
+                <td class="meet">2021 Portage Cross Country Invitational (Division 1 Reserve)</td>
+                <td class="comments" class="comment-segment"></td>
+            </tr>
+        
+            <tr>
+                <td class="place">106 </td>
+                <td class="time">18:51.1PR</td>
+                <td class="date">Oct 16</td>
+                <td class="meet">37th Annual Gabriel Richard XC Invitational (Varsity Large School)</td>
+                <td class="comments" class="comment-segment">You made some great moves on the hills. Keep working on your endurance.</td>
+            </tr>
+        
+            <tr>
+                <td class="place">85 </td>
+                <td class="time">21:52.9</td>
+                <td class="date">Oct 29</td>
+                <td class="meet">Brighton PROM</td>
+                <td class="comments" class="comment-segment"></td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </div>
+        
+        <footer>
+            <nav>
+                <ul class="nav-list">
+                    <!-- Added button functionality to return to home page -->
+                    <li><a id="home-button" href="/">Go Home</a></li>
+                </ul> 
+            </nav>
+        </footer>
+        <a id="fab" href="#nav-bar" class="fab" tabindex="0">↑</a>
+
+        <script src="../js/func.js"></script>
+        <script src="../dist/js/lightbox-plus-jquery.js"></script>
+
+
+    </body>
+</html>
+    
