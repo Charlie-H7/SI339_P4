@@ -68,7 +68,7 @@ table{
 /* Styling for key access */
 :focus {
     outline: none; /* Removes default outline (optional) */
-    border: 3px solid red;
+    border: 3px solid rgb(161, 21, 255);
 }
 
 

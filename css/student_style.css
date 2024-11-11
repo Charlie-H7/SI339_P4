@@ -411,11 +411,11 @@ body.high-contrast h3{
 /* Styling for tabindex */
 :focus {
     outline: none; /* Removes default outline (optional) */
-    border: 3px solid blue;
+    border: 3px solid rgb(161, 21, 255);
 }
 
 #fab:focus {
-    border: 5px solid blue;
+    border: 5px solid rgb(161, 21, 255);
 }
 
 /* System Dark Mode */
