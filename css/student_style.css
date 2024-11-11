@@ -11,20 +11,27 @@ a {
     color: black;
 }
 
-/* Hide hamburger for mobile (default) view */
-.hamburger {
-    visibility: hidden;
-    /* font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 1rem; */
-}  
+
+#goal {
+    padding-bottom: 1vw;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for tabindex */
+:focus {
+    outline: none; /* Removes default outline (optional) */
+    border: 3px solid rgb(161, 21, 255);
+}
+
+#fab:focus {
+    border: 5px solid rgb(161, 21, 255);
+}
 
 
-
-/* Full-width navigation container */
+/* NAV STYLING */
 #nav-bar {
     width: 100%;
     background-color: black; /* Background color for entire navbar */
@@ -32,7 +39,6 @@ a {
     border-bottom-right-radius: 25px;
 }
 
-/* Navbar list styling */
 .nav-list {
     display: flex;
     flex-direction: column;
@@ -66,7 +72,7 @@ a {
 }
 
 
-/* block for team info */
+/* TEAM INFO STYLING */
 .team-info {
     border: 1px solid black;
     margin: auto;
@@ -80,7 +86,7 @@ a {
 
 
 
-/* Athlete Info Styling */
+/* ATHLETE INFO STYLING */
 .athlete-info {
     border-bottom: solid 1px black;
     padding: 0;
@@ -99,7 +105,7 @@ a {
 
 
 
-/* Table Styles */
+/* TABLE STYLING */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -229,7 +235,7 @@ th {
 
   }
 
-/* Hide date and comments if screen small */
+/* Hide date and comments, screen small */
 
     .date, .table-header-date {
         display: none;
@@ -240,14 +246,6 @@ th {
         display: none;
     }
     
-
-
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition: none;
-        animation: none;
-    }
-}
 
 /* DARK MODE PROFILE */
 
@@ -292,6 +290,7 @@ body.dark-mode .athlete-info {
     padding: 0;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 50vw;
     text-align: center; /* Center stuff in middle of screen */
     color: white;
@@ -353,6 +352,7 @@ body.high-contrast .athlete-info {
     padding: 0;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 50vw;
     text-align: center; /* Center stuff in middle of screen */
     color: black;
@@ -400,25 +400,9 @@ body.high-contrast h3{
     }
 }
 
-#goal {
-    padding-bottom: 1vw;
-}
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-/* Styling for tabindex */
-:focus {
-    outline: none; /* Removes default outline (optional) */
-    border: 3px solid rgb(161, 21, 255);
-}
-
-#fab:focus {
-    border: 5px solid rgb(161, 21, 255);
-}
-
-/* System Dark Mode */
+/* MEDIA QUERIES */
 @media (prefers-color-scheme: dark) {
     body.system-dark {
         background-color: #121212;
@@ -429,5 +413,12 @@ body.high-contrast h3{
     body.system-dark {
         background-color: #121212;
         color: #ffffff;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none;
+        animation: none;
     }
 }

@@ -21,47 +21,17 @@ function toggleNav() {
     
   });
 
-//   function setTheme(theme) {
-//     // Remove any previous theme classes
-//     document.body.classList.remove('light-mode', 'dark-mode', 'system-dark', 'high-contrast');
 
-//     if (theme === 'dark') {
-//         document.body.classList.add('dark-mode');
-//         localStorage.setItem('theme', 'dark');
-//     } else if (theme === 'light') {
-//         document.body.classList.add('light-mode');
-//         localStorage.setItem('theme', 'light');
-//     } else if (theme === 'high-contrast') {
-//         document.body.classList.add('high-contrast');
-//         localStorage.setItem('theme', 'high-contrast');
-//     } else {
-//         // Use system preference for "System Default"
-//         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//             document.body.classList.add('dark-mode');
-//         }
-       
-//         localStorage.setItem('theme', 'system');
-//     }
-// }
-
-// // Load saved theme from localStorage or fallback to system preference
-// function loadTheme() {
-//     const savedTheme = localStorage.getItem('theme') || 'system';
-//     document.getElementById('theme-select').value = savedTheme;
-//     setTheme(savedTheme);
-// }
-
-// loadTheme();
 
 
 
 // theme
 document.getElementById("theme-switch").addEventListener("change", function () {
-    console.log("Color scheme preference has been changed to ", this.value);
-    document.body.className = this.value;
+    console.log("Theme changed: ", this.value);
+    document.body.className = this.value; //Picks the corresponding theme
 });
 
-// COLOR SCHEME DETECTOR
+// Color Scheme
 function setColorScheme() {
     lightMode = window.matchMedia('(prefers-color-scheme: light)').matches;
     darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;

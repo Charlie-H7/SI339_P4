@@ -6,7 +6,7 @@ body, html {
 
 }
 
-/* Full-width navigation container */
+/* NAV STYLING */
 #nav-bar {
     width: 100%;
     background-color: black; /* Background color for entire navbar */
@@ -14,7 +14,7 @@ body, html {
     border-bottom-right-radius: 25px;
 }
 
-/* Navbar list styling */
+
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -71,7 +71,7 @@ table{
     border: 3px solid rgb(161, 21, 255);
 }
 
-
+/* FONT STYLING */
 body {
     font-size: 20px;
 }
